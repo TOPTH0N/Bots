@@ -19,10 +19,10 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"- يـجـب عليـك اެݪاشـتـࢪاك [فـي هـذه الـقناة]({link}) وبعد ذلـك أعـد المـحاولـة مـࢪة أخـࢪى!",
+                    f"- يـجـب عليـك اެݪاشـتـࢪاك [فـي هـذه الـقناة]({https://t.me/xXStrem}) وبعد ذلـك أعـد المـحاولـة مـࢪة أخـࢪى!",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton("سورس أكس ستريم - xXStrem", url=link)]]
+                        [[InlineKeyboardButton("سورس ستريم- xXStrem", url=link)]]
                     ),
                 )
                 await msg.stop_propagation()
